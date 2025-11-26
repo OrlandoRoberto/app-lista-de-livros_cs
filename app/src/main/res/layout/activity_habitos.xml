@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/gradient_habitos">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hábitos"
+            android:paddingTop="16dp"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/opoderdohabito1" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="O Poder do Hábito"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Charles Duhigg"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 44,99"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/habitosatomicos" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Hábitos Atómicos"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="James Clear"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 39,99"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/naoevocesaoseushabitos" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Não é você são seus Hábitos "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luciano do Carmo Gomes"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 48,59"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/mudancadehabitos" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Mudança de Hábitos "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Igor lins Lemos"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 42,20"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/omilagredamanha"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="O Milagre do Amanhã"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hal Elrod"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 11,96"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/ossetehabitos" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Os 7 Hábitos das Pessoas Altamente Eficazes"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stephen R. Covey"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 55,92"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/oshabitossecretosdosgenios" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Os Hábitos Secretos dos Gênios"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Craig M. Wright"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 53,31"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem8"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/minihabitos" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Mini-Hábitos"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stephen Guise"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 34,90"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem9"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/habitos365" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="365 Hábitos Poderosos"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paulo Houch"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+
+                <TextView
+                    android:id="@+id/preco9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 8,24"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem10"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/bonshabitos" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Bons Hábitos Maus Hábitos"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wendy Wood"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 44,90"
+                    android:textSize="16sp"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

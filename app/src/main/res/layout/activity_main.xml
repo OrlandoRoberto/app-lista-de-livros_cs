@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/gradient_mentalidade">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Livros de Mentalidade"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+        <!-- 1º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/quempensaenriquece" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/textoImagem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Quem Pensa Enriquece "
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                />
+
+                <TextView
+                    android:id="@+id/autor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NapoleonHill"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 49,90"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:background="#4CAF50"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <!-- 2º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/ohomemmaisricodababilonia" />
+
+             <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/textoImagem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="O Homem mais Rico da Babilônia "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/autor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="George Samuel.Clason"
+                android:textSize="16sp"
+                android:textColor="#666666"/>
+
+            <TextView
+                android:id="@+id/preco2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 39,99"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#4CAF50"
+                android:textColor="#ffffff"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"/>/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <!-- 3º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/mindset" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Mindset "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carol Dweck"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 52,67"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            </LinearLayout>
+
+        <!-- 4º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/essencialismo2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Essencialismo "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Greg Mckeowm"
+                    android:textSize="16sp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 35,80"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 5º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/maisespertoqueodiabo" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Mais Esperto que o Diabo "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Napoleon Hill"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 25,00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 6º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/foda_se" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="A Sutil Arte de Ligar o Foda-se"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mark manson"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 15,00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 7º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/imperfeito" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="A Coragem de Ser Imperfeito"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brené Brown"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 46,41"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 8º CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <ImageView
+                android:id="@+id/imagem8"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/comecepeloporque" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/textoImagem8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Comece Pelo Porquê"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"/>
+
+                <TextView
+                    android:id="@+id/autor8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simon Sinek"
+                    android:textSize="16dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/preco8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 30,00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="#4CAF50"
+                    android:textColor="#ffffff"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
